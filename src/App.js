@@ -42,7 +42,7 @@ render() {
         <h1>Monsters Rolodex</h1>
         <div className='card-list'>
           {this.state.monsters.map(monster => (
-            <Card props={monster}/>
+            <Card key={monster.id} id={monster.id} name={monster.name} email={monster.email}/>
           ))}
         </div>
       </div>
